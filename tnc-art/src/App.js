@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./Style.css";
 import Home from "./components/Home";
 
@@ -13,7 +13,7 @@ function App() {
       .timeline({
         scrollTrigger: {
           trigger: ".nft",
-          start: "top-=600px center",
+          start: "top-=550px center",
           end: "top+=350px center",
           scrub: 1,
         },
@@ -32,9 +32,8 @@ function App() {
       .from(".four-title", { yPercent: "500", duration: "2" })
       .from(".five-title", { yPercent: "500", duration: "2" })
       .from(".small-logo", { opacity: "0", y: "50", duration: "1" });
-
-    ScrollTrigger.refresh();
   }, []);
+  ScrollTrigger.refresh();
 
   return (
     <div className="App">
