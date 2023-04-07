@@ -104,6 +104,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 80px;
+  overflow: hidden;
 
   .nft-title {
     width: 95%;
@@ -141,6 +142,7 @@ body {
     width: 95%;
     height: 100vh;
     background-color: white;
+    backface-visibility: visible;
   }
 
   .nft-contents {
@@ -169,7 +171,7 @@ body {
   justify-content: space-around;
   align-items: center;
   gap: 50px;
-
+  overflow: hidden;
   .about-title {
     width: 100%;
     margin: 100px 0;
@@ -201,6 +203,7 @@ body {
     .about-pic {
       width: 50%;
       height: 100%;
+      overflow: hidden !important;
       div {
         width: 80%;
         height: 100%;

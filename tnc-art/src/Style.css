@@ -97,6 +97,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 80px;
+  overflow: hidden;
 }
 .nft .nft-title {
   width: 95%;
@@ -132,6 +133,8 @@ body {
   width: 95%;
   height: 100vh;
   background-color: white;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
 }
 .nft .nft-contents {
   width: 95%;
@@ -157,6 +160,7 @@ body {
   justify-content: space-around;
   align-items: center;
   gap: 50px;
+  overflow: hidden;
 }
 .about .about-title {
   width: 100%;
@@ -189,6 +193,7 @@ body {
 .about .about-content-box .about-pic {
   width: 50%;
   height: 100%;
+  overflow: hidden !important;
 }
 .about .about-content-box .about-pic div {
   width: 80%;
@@ -351,4 +356,4 @@ body {
 }
 .our .our-list-wrapper .our-list:nth-child(3) {
   width: 300px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=Style.css.map */

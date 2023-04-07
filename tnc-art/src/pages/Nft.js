@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Nft() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <section className="nft">
       <div className="nft-title">
@@ -29,22 +35,27 @@ function Nft() {
           <img src="assets/image/Logo.svg" alt="nft-logo" />
         </div>
       </div>
-
-      <div className="nft-pic"></div>
+      <div
+        className="nft-pic"
+        data-aos="flip-down"
+        data-aos-duration="3000"
+      ></div>
 
       <div className="nft-contents">
-        <p>
+        <p data-aos="fade-up" data-aos-delay="500">
           A Non-Fungible Token (NFT) Is A Unique Digital Asset Powered By
           Blockchain Technology.
         </p>
-        <p>
+        <p data-aos="fade-up" data-aos-delay="700">
           It Ensures Digital Ownership And Represents Real-World Objects Like
           Art And Many More.
         </p>
-        <p>
+        <p data-aos="fade-up" data-aos-delay="900">
           Ther Are Plenty Of Opportunities For Visual Arts With This Technology,
         </p>
-        <p>And We're Banking On Its Potential To Disrupt The Space.</p>
+        <p data-aos="fade-up" data-aos-delay="1100">
+          And We're Banking On Its Potential To Disrupt The Space.
+        </p>
       </div>
     </section>
   );

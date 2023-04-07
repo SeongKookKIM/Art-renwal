@@ -1,21 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function About() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div className="about">
       <div className="about-title">
-        <h2>ABO</h2>
-        <h2>
+        <h2 data-aos="flip-left" data-aos-duration="2000">
+          ABO
+        </h2>
+
+        <h2 data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500">
           <span>TNC</span>
-          <span>ART</span>UT
+          <span>ART</span>
+          UT
         </h2>
       </div>
 
       <div className="about-left about-content-box">
         <div className="about-pic">
-          <div></div>
+          <div
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="500"
+          ></div>
         </div>
-        <div className="about-content">
+        <div
+          className="about-content"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="500"
+        >
           <p>Tnc Art Is The Creative Arm Of The Dubai-Based</p>
           <p>Blockchain Firm TNC Group.</p>
           <p>Launched In 2018, TNC Is One Of The Fastest-Growing</p>
@@ -26,7 +45,12 @@ function About() {
       </div>
 
       <div className="about-right about-content-box">
-        <div className="about-content">
+        <div
+          className="about-content"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="500"
+        >
           <p>Driven By The Passion And Creative</p>
           <p>Genius Of Over A Dozen Digital Artists,</p>
           <p>TNC Art Aims To Carve Out A Uique</p>
@@ -37,15 +61,28 @@ function About() {
           <p>We Are One Step Closer To This Goal.</p>
         </div>
         <div className="about-pic">
-          <div></div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="500"
+          ></div>
         </div>
       </div>
 
       <div className="about-left about-content-box">
         <div className="about-pic">
-          <div></div>
+          <div
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="500"
+          ></div>
         </div>
-        <div className="about-content">
+        <div
+          className="about-content"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="500"
+        >
           <p>It is The NFT Space That Motivates Us To</p>
           <p>Pick Up Our Stylus - That Inspires Us To</p>
           <p>Render Color To Our Imagination.</p>
